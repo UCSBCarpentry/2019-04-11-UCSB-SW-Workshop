@@ -36,9 +36,9 @@ eventbrite: "57559855076"          # optional: alphanumeric key for Eventbrite r
 {% endcomment %}
 <p id="Registration">
   <strong>Registration:</strong>
-  This workshop is for FACULTY ONLY. Please register only if you are a faculty member affiliated with UC Santa Barbara. Please make sure that you can commit to the full two days of learning. To learn about future Carpentry workshops and to be added to our mailing list, visit our <a href="https://www.library.ucsb.edu/software-carpentry">UCSB Carpentry Workshop</a> page.
+   Please make sure that you can commit to the full two days of learning. To learn about future Carpentry workshops and to be added to our mailing list, visit our <a href="https://www.library.ucsb.edu/software-carpentry">UCSB Carpentry Workshop</a> page.
 </p>  
-  
+
 {% comment %}
   EVENTBRITE
 
@@ -161,7 +161,7 @@ eventbrite: "57559855076"          # optional: alphanumeric key for Eventbrite r
   get in touch (using contact details below) and we will
   attempt to provide them.
 </p>
-  
+
 {% comment %}
   CONTACT EMAIL ADDRESS
 
@@ -325,5 +325,3 @@ eventbrite: "57559855076"          # optional: alphanumeric key for Eventbrite r
            the workshop will teach Python using something other than
            the Jupyter notebook.
            Details at https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility {% endcomment %}
-
-
