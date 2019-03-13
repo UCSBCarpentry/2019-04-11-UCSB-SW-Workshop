@@ -1,6 +1,6 @@
 Hello everyone.  
 
-The Collaboratory is pleased announce a 2-day Software Carpentry Workshop to be presented Thursday and Friday, March 21-22.  This workshop will provide an introduction to Linux/Bash tools, git, and R.  We would especially like to welcome faculty who use other computing tools and are curious to branch out.  While your students take their exams, come learn with us!
+The Collaboratory is pleased announce a 2-day Software Carpentry Workshop to be presented Thursday and Friday, April 11-12.  This workshop will provide an introduction to Linux/Bash tools, git, and R.  We would especially like to welcome faculty who use other computing tools and are curious to branch out. 
 
 Software Carpentry aims to help researchers get their work done in less time and with less pain by teaching them basic research computing skills. This hands-on workshop will cover basic concepts and tools, including command line scripting, version control, data management, and data visualization with the R statistical programming language. Participants will be encouraged to help one another and to apply what they have learned to their own research problems.
 
@@ -9,7 +9,7 @@ This workshop is targeted at NOVICE users.  The only requirement is that you can
 As part of a larger campus Data Science Initiative, the Library is thrilled to collaborate with Enterprise Technology Services' (ETS) Center for Scientific Computing (CSC), and the department of Ecology, Evolution, and Marine Biology (EEMB) to help present this workshop.
 
 Registration is required and limited to 25.  For more information, and a link to the registration form, please see:
-  https://ucsbcarpentry.github.io/2019-03-21-UCSBLibrary/
+  https://ucsbcarpentry.github.io/2019-04-11-UCSB-SW-Workshop/
 
 Jon Jablonski
 Director, Interdisciplinary Research Collaboratory
