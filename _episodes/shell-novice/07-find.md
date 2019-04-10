@@ -308,12 +308,12 @@ Miscellaneous:
 > Put these commands and pipes in the right order to achieve this:
 > 
 > ~~~
-> 
 > >  
 > |  
 > grep -w rabbit 
 > |  
-> rabbit.txt  
+> rabbit.txt
+> |
 > cut -d , -f 1,3  
 > ~~~
 > {: .language-bash}
