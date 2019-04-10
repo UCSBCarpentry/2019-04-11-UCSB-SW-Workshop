@@ -247,7 +247,7 @@ Miscellaneous:
 >
 > > ## Solution
 > > The correct answer is 3, because the `-w` flag looks only for whole-word matches.
-> > The other options will also match "of" when part of another word.
+> > The other options will also match "of" as a part of another word.
 > {: .solution}
 {: .challenge}
 
