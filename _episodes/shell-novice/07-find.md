@@ -585,7 +585,7 @@ $ grep "FE" $(find .. -name '*.pdb')
 >
 > 1.  `find data -name '*s.txt' | grep -v net`
 > 2.  `find data -name *s.txt | grep -v net`
-> 3.  `grep -v "temp" $(find data -name '*s.txt')`
+> 3.  `grep -v "" $(find data -name '*s.txt')`
 > 4.  None of the above.
 >
 > > ## Solution
