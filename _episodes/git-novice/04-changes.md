@@ -217,7 +217,7 @@ and the log message Git was given when the commit was created.
 > (and so that we can't accidentally edit or delete an old version).
 {: .callout}
 
-Now suppose Dracula adds more information to the file.
+Now suppose Margaret adds more information to the file.
 (Again, we'll edit with `nano` and then `cat` the file to show its contents;
 you may use a different editor, and don't need to `cat`.)
 
@@ -386,7 +386,7 @@ $ cat mars.txt
 ~~~
 Cold and dry, but everything is my favorite color
 The two moons may be a problem for Juan
-But the Mummy will appreciate the lack of humidity
+But Sarah will appreciate the lack of humidity
 ~~~
 {: .output}
 
@@ -403,7 +403,7 @@ index 315bf3a..b36abfd 100644
 @@ -1,2 +1,3 @@
  Cold and dry, but everything is my favorite color
  The two moons may be a problem for Juan
-+But the Mummy will appreciate the lack of humidity
++But the Sarah will appreciate the lack of humidity
 ~~~
 {: .output}
 
@@ -439,7 +439,7 @@ index 315bf3a..b36abfd 100644
 @@ -1,2 +1,3 @@
  Cold and dry, but everything is my favorite color
  The two moons may be a problem for Juan
-+But the Mummy will appreciate the lack of humidity
++But Sarah will appreciate the lack of humidity
 ~~~
 {: .output}
 
@@ -449,12 +449,12 @@ and what's in the staging area.
 Let's save our changes:
 
 ~~~
-$ git commit -m "Discuss concerns about Mars' climate for Mummy"
+$ git commit -m "Discuss concerns about Mars' climate for Sarah"
 ~~~
 {: .language-bash}
 
 ~~~
-[master 005937f] Discuss concerns about Mars' climate for Mummy
+[master 005937f] Discuss concerns about Mars' climate for Sarah
  1 file changed, 1 insertion(+)
 ~~~
 {: .output}
@@ -484,7 +484,7 @@ commit 005937fbe2a98fb83f0ade869025dc2636b4dad5
 Author: Margaret Hamilton <margaret.hamilton@nasa.gov>
 Date:   Thu Aug 22 10:14:07 2013 -0400
 
-    Discuss concerns about Mars' climate for Mummy
+    Discuss concerns about Mars' climate for Sarah
 
 commit 34961b159c27df3b475cfe4415d94a6d1fcd064d
 Author: Margaret Hamilton <margaret.hamilton@nasa.gov>
@@ -540,7 +540,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > Author: Margaret Hamilton <margaret.hamilton@nasa.gov>
 > Date:   Thu Aug 22 10:14:07 2013 -0400
 >
->    Discuss concerns about Mars' climate for Mummy
+>    Discuss concerns about Mars' climate for Sarah
 > ~~~
 > {: .output}
 >
@@ -552,7 +552,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > ~~~
 > {: .language-bash}
 > ~~~
-> * 005937f Discuss concerns about Mars' climate for Mummy
+> * 005937f Discuss concerns about Mars' climate for Sarah
 > * 34961b1 Add concerns about effects of Mars' moons on Juan
 > * f22b25e Start notes on Mars as a base
 > ~~~
@@ -566,7 +566,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > ~~~
 > {: .language-bash}
 > ~~~
-> * 005937f Discuss concerns about Mars' climate for Mummy (HEAD, master)
+> * 005937f Discuss concerns about Mars' climate for Sarah (HEAD, master)
 > * 34961b1 Add concerns about effects of Mars' moons on Juan
 > * f22b25e Start notes on Mars as a base
 > ~~~
@@ -628,8 +628,8 @@ repository (`git commit`):
 > last commit made to `mars.txt`?
 >
 > 1. "Changes"
-> 2. "Added line 'But the Mummy will appreciate the lack of humidity' to mars.txt"
-> 3. "Discuss effects of Mars' climate on the Mummy"
+> 2. "Added line 'But Sarah will appreciate the lack of humidity' to mars.txt"
+> 3. "Discuss effects of Mars' climate on Sarah"
 >
 > > ## Solution
 > > Answer 1 is not descriptive enough, and the purpose of the commit is unclear;

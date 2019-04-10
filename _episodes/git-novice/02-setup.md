@@ -21,7 +21,7 @@ of configurations we will set as we get started with Git:
 
 On a command line, Git commands are written as `git verb options`,
 where `verb` is what we actually want to do and `options` is additional optional information which may be needed for the `verb`. So here is how
-Dracula sets up his new laptop:
+Margaret sets up her new laptop:
 
 ~~~
 $ git config --global user.name "Margaret Hamilton"
@@ -44,8 +44,8 @@ in a later lesson will include this information.
 > Different operating systems use different character(s) to represent the end of a line.
 > (You may also hear these referred to as newlines or line breaks.)
 > Because Git uses these characters to compare files,
-> it may cause unexpected issues when editing a file on different machines. 
-> Though it is beyond the scope of this lesson, you can read more about this issue 
+> it may cause unexpected issues when editing a file on different machines.
+> Though it is beyond the scope of this lesson, you can read more about this issue
 > [on this GitHub page](https://help.github.com/articles/dealing-with-line-endings/).
 {: .callout}
 >
@@ -66,12 +66,12 @@ in a later lesson will include this information.
 > $ git config --global core.autocrlf true
 > ~~~
 > {: .language-bash}
-> 
+>
 
-For these lessons, we will be interacting with [GitHub](https://github.com/) and so the email address used should be the same as the one used when setting up your GitHub account. If you are concerned about privacy, please review [GitHub's instructions for keeping your email address private][git-privacy]. 
+For these lessons, we will be interacting with [GitHub](https://github.com/) and so the email address used should be the same as the one used when setting up your GitHub account. If you are concerned about privacy, please review [GitHub's instructions for keeping your email address private][git-privacy].
 If you elect to use a private email address with GitHub, then use that same email address for the `user.email` value, e.g. `username@users.noreply.github.com` replacing `username` with your GitHub one. You can change the email address later on by using the `git config` command again.
 
-Dracula also has to set his favorite text editor, following this table:
+Margaret also has to set her favorite text editor, following this table:
 
 | Editor                                | Configuration command                            |
 |:--------------------------------------|:-------------------------------------------------|
@@ -81,9 +81,9 @@ Dracula also has to set his favorite text editor, following this table:
 {: .challenge}
 
 
-> > ## Other Editors 
+> > ## Other Editors
 > > configure git to use other editor software
-> > 
+> >
 > > | Editor                                | Configuration command                            |
 > > |:--------------------------------------|:-------------------------------------------------|
 > > | BBEdit (Mac, with command line tools) | `$ git config --global core.editor "bbedit -w"`    |

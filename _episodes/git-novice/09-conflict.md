@@ -30,8 +30,8 @@ $ cat mars.txt
 
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
+The two moons may be a problem for Juan
+But Sarah will appreciate the lack of humidity
 ~~~
 {: .output}
 
@@ -45,9 +45,9 @@ $ cat mars.txt
 
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
-This line added to Wolfman's copy
+The two moons may be a problem for Juan
+But Sarah will appreciate the lack of humidity
+This line added to Juan's copy
 ~~~
 {: .output}
 
@@ -93,8 +93,8 @@ $ cat mars.txt
 
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
+The two moons may be a problem for Juan
+But Sarah will appreciate the lack of humidity
 We added a different line in the other copy
 ~~~
 {: .output}
@@ -172,12 +172,12 @@ $ cat mars.txt
 
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
+The two moons may be a problem for Juan
+But Sarah will appreciate the lack of humidity
 <<<<<<< HEAD
 We added a different line in the other copy
 =======
-This line added to Wolfman's copy
+This line added to Juan's copy
 >>>>>>> dabb4c8c450e8475aee9b14b4383acc99f42af1d
 ~~~
 {: .output}
@@ -202,8 +202,8 @@ $ cat mars.txt
 
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
+The two moons may be a problem for Juan
+But Sarah will appreciate the lack of humidity
 We removed the conflict on this line
 ~~~
 {: .output}
@@ -290,8 +290,8 @@ $ cat mars.txt
 
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
+The two moons may be a problem for Juan
+But Sarah will appreciate the lack of humidity
 We removed the conflict on this line
 ~~~
 {: .output}
@@ -336,7 +336,7 @@ Conflicts can also be minimized with project management strategies:
 >
 > > ## Solution
 > >
-> > Let's try it. Suppose Dracula takes a picture of Martian surface and
+> > Let's try it. Suppose Margaret takes a picture of Martian surface and
 > > calls it `mars.jpg`.
 > >
 > > If you do not have an image file of Mars available, you can create
@@ -356,7 +356,7 @@ Conflicts can also be minimized with project management strategies:
 > > `ls` shows us that this created a 1-kilobyte file. It is full of
 > > random bytes read from the special file, `/dev/urandom`.
 > >
-> > Now, suppose Dracula adds `mars.jpg` to his repository:
+> > Now, suppose Margaret adds `mars.jpg` to her repository:
 > >
 > > ~~~
 > > $ git add mars.jpg
@@ -371,9 +371,9 @@ Conflicts can also be minimized with project management strategies:
 > > ~~~
 > > {: .output}
 > >
-> > Suppose that Wolfman has added a similar picture in the meantime.
+> > Suppose that Juan has added a similar picture in the meantime.
 > > His is a picture of the Martian sky, but it is *also* called `mars.jpg`.
-> > When Dracula tries to push, he gets a familiar message:
+> > When Margaret tries to push, she gets a familiar message:
 > >
 > > ~~~
 > > $ git push origin master
@@ -430,7 +430,7 @@ Conflicts can also be minimized with project management strategies:
 > > the version we want to keep. Then we can add and commit this version.
 > >
 > > On the key line above, Git has conveniently given us commit identifiers
-> > for the two versions of `mars.jpg`. Our version is `HEAD`, and Wolfman's
+> > for the two versions of `mars.jpg`. Our version is `HEAD`, and Juan's
 > > version is `439dc8c0...`. If we want to use our version, we can use
 > > `git checkout`:
 > >
@@ -446,8 +446,8 @@ Conflicts can also be minimized with project management strategies:
 > > ~~~
 > > {: .output}
 > >
-> > If instead we want to use Wolfman's version, we can use `git checkout` with
-> > Wolfman's commit identifier, `439dc8c0`:
+> > If instead we want to use Juan's version, we can use `git checkout` with
+> > Juan's commit identifier, `439dc8c0`:
 > >
 > > ~~~
 > > $ git checkout 439dc8c0 mars.jpg
