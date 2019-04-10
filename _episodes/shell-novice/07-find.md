@@ -295,7 +295,8 @@ Miscellaneous:
 > ~~~
 > {: .source}
 >
-> She wants to write a command-line that takes a species in a .txt file, containing a list of dates and the number of that species seen on each date.
+> She wants to write a shell command to return one file called `rabbit.txt` 
+> containing a list of dates and the number of rabbits seen on each date.
 > For example using the data shown above, `rabbit.txt` would contain:
 > 
 > ~~~
@@ -307,28 +308,26 @@ Miscellaneous:
 > Put these commands and pipes in the right order to achieve this:
 > 
 > ~~~
->
 > >  
 > |  
-> grep -w "rabbit" animals.txt 
+> grep -w "rabbit" 
 > |  
-> $rabbit.txt  
+> rabbit.txt
+> |
 > cut -d , -f 1,3  
 > ~~~
 > {: .language-bash}
 >
-> Hint: use `man grep` to look for how to grep text recursively in a directory
-> and `man cut` to select more than one field in a line.
+> Hint: use  `man cut` or 'cut --help' to select more than one field in a line.
 >
 > An example of such a file is provided in `data-shell/data/animal-counts/animals.txt`
 >
 > > ## Solution
 > >
 > > ```
-> > grep -w "rabbit" animals.txt  | cut -d , -f 1,3  > $rabbit.txt
+> > grep -w "rabbit" animals.txt | cut -d , -f 1,3  > rabbit.txt
 > > ```
 > > {: .source}
-> >
 > >
 > > {: .language-bash}
 > {: .solution}
@@ -384,7 +383,7 @@ Again,
 it has a lot of options;
 to show how the simplest ones work, we'll use the directory tree shown below.
 
-![File Tree for Find Example](../fig/find-file-tree.svg)
+![File Tree for Find Example](../../fig/find-file-tree.svg)
 
 Nelle's `writing` directory contains one file called `haiku.txt` and three subdirectories:
 `thesis` (which contains a sadly empty file, `empty-draft.md`);

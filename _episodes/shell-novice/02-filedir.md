@@ -76,7 +76,7 @@ which will be constructed in a similar way, but not be exactly identical.
 
 On Nelle's computer, the filesystem looks like this:
 
-![The File System](../fig/filesystem.svg)
+![The File System](../../fig/filesystem.svg)
 
 At the top is the **root directory**
 that holds everything else.
@@ -719,7 +719,7 @@ Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 > 3.  `2012-12-01/ 2013-01-08/ 2013-01-27/`
 > 4.  `original/ pnas_final/ pnas_sub/`
 >
-> ![File System for Challenge Questions](../fig/filesystem-challenge.svg)
+> ![File System for Challenge Questions](../../fig/filesystem-challenge.svg)
 >
 > > ## Solution
 > > 1. No: there *is* a directory `backup` in `/Users`.
