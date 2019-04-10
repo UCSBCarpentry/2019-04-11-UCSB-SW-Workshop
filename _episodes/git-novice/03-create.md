@@ -14,11 +14,8 @@ keypoints:
 Once Git is configured,
 we can start using it.
 
-We will continue with the story of Wolfman and Dracula who are investigating if it
-is possible to send a planetary lander to Mars. 
-
-![motivatingexample](../../fig/motivatingexample.png)
-
+We will pretend we're working with a team who are investigating if it
+is possible to send a planetary lander to Mars.
 
 First, let's create a directory in `Desktop` folder for our work and then move into that directory:
 
@@ -65,7 +62,7 @@ $ ls -a
 ~~~
 {: .output}
 
-Git uses this special sub-directory to store all the information about the project, 
+Git uses this special sub-directory to store all the information about the project,
 including all files and sub-directories located within the project's directory.
 If we ever delete the `.git` sub-directory,
 we will lose the project's history.
@@ -91,9 +88,9 @@ wording of the output might be slightly different.
 
 > ## Places to Create Git Repositories
 >
-> Along with tracking information about planets (the project we have already created), 
+> Along with tracking information about planets (the project we have already created),
 > Dracula would also like to track information about moons.
-> Despite Wolfman's concerns, Dracula creates a `moons` project inside his `planets` 
+> Despite Juan's concerns, Margaret Hamilton creates a `moons` project inside his `planets`
 > project with the following sequence of commands:
 >
 > ~~~
@@ -107,17 +104,17 @@ wording of the output might be slightly different.
 > ~~~
 > {: .language-bash}
 >
-> Is the `git init` command, run inside the `moons` sub-directory, required for 
+> Is the `git init` command, run inside the `moons` sub-directory, required for
 > tracking files stored in the `moons` sub-directory?
-> 
+>
 > > ## Solution
 > >
-> > No. Dracula does not need to make the `moons` sub-directory a Git repository 
-> > because the `planets` repository will track all files, sub-directories, and 
-> > sub-directory files under the `planets` directory.  Thus, in order to track 
-> > all information about moons, Dracula only needed to add the `moons` sub-directory
+> > No. Margaret does not need to make the `moons` sub-directory a Git repository
+> > because the `planets` repository will track all files, sub-directories, and
+> > sub-directory files under the `planets` directory.  Thus, in order to track
+> > all information about moons, Margaret only needed to add the `moons` sub-directory
 > > to the `planets` directory.
-> > 
+> >
 > > Additionally, Git repositories can interfere with each other if they are "nested":
 > > the outer repository will try to version-control
 > > the inner repository. Therefore, it's best to create each new Git
@@ -137,9 +134,9 @@ wording of the output might be slightly different.
 > {: .solution}
 {: .challenge}
 > ## Correcting `git init` Mistakes
-> Wolfman explains to Dracula how a nested repository is redundant and may cause confusion
-> down the road. Dracula would like to remove the nested repository. How can Dracula undo 
-> his last `git init` in the `moons` sub-directory?
+> Juan explains to Margaret how a nested repository is redundant and may cause confusion
+> down the road. Margaret would like to remove the nested repository. How can Margaret undo
+> her last `git init` in the `moons` sub-directory?
 >
 > > ## Solution -- USE WITH CAUTION!
 > >
@@ -149,12 +146,12 @@ wording of the output might be slightly different.
 > > $ rm filename
 > > ~~~
 > > {: .language-bash}
-> > 
+> >
 > > The file being removed has to be in sync with the branch head with no updates. If there are updates, the file can be removed by force by using the `-f` option. Similarly a directory can be removed from git using `rm -r dirname` or `rm -rf dirname`.
 > >
 > > ### Solution
 > > Git keeps all of its files in the `.git` directory.
-> > To recover from this little mistake, Dracula can just remove the `.git`
+> > To recover from this little mistake, Margaret Hamilton can just remove the `.git`
 > > folder in the moons subdirectory by running the following command from inside the `planets` directory:
 > >
 > > ~~~

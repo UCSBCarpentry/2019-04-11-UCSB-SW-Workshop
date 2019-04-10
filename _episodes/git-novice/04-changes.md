@@ -26,7 +26,7 @@ $ pwd
 ~~~
 {: .language-bash}
 ~~~
-/home/vlad/Desktop/planets
+/home/mhamilton/Desktop/planets
 ~~~
 {: .output}
 
@@ -37,7 +37,7 @@ $ pwd
 ~~~
 {: .language-bash}
 ~~~
-/home/vlad/Desktop/planets/moons
+/home/mhamilton/Desktop/planets/moons
 ~~~
 {: .output}
 ~~~
@@ -192,7 +192,7 @@ $ git log
 
 ~~~
 commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: Margaret Hamilton <margaret.hamilton@nasa.gov>
 Date:   Thu Aug 22 09:51:46 2013 -0400
 
     Start notes on Mars as a base
@@ -229,7 +229,7 @@ $ cat mars.txt
 
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
+The two moons may be a problem for Juan
 ~~~
 {: .output}
 
@@ -276,7 +276,7 @@ index df0654a..315bf3a 100644
 +++ b/mars.txt
 @@ -1 +1,2 @@
  Cold and dry, but everything is my favorite color
-+The two moons may be a problem for Wolfman
++The two moons may be a problem for Juan
 ~~~
 {: .output}
 
@@ -299,7 +299,7 @@ If we break it down into pieces:
 After reviewing our change, it's time to commit it:
 
 ~~~
-$ git commit -m "Add concerns about effects of Mars' moons on Wolfman"
+$ git commit -m "Add concerns about effects of Mars' moons on Juan"
 $ git status
 ~~~
 {: .language-bash}
@@ -322,12 +322,12 @@ Let's fix that:
 
 ~~~
 $ git add mars.txt
-$ git commit -m "Add concerns about effects of Mars' moons on Wolfman"
+$ git commit -m "Add concerns about effects of Mars' moons on Juan"
 ~~~
 {: .language-bash}
 
 ~~~
-[master 34961b1] Add concerns about effects of Mars' moons on Wolfman
+[master 34961b1] Add concerns about effects of Mars' moons on Juan
  1 file changed, 1 insertion(+)
 ~~~
 {: .output}
@@ -385,7 +385,7 @@ $ cat mars.txt
 
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
+The two moons may be a problem for Juan
 But the Mummy will appreciate the lack of humidity
 ~~~
 {: .output}
@@ -402,7 +402,7 @@ index 315bf3a..b36abfd 100644
 +++ b/mars.txt
 @@ -1,2 +1,3 @@
  Cold and dry, but everything is my favorite color
- The two moons may be a problem for Wolfman
+ The two moons may be a problem for Juan
 +But the Mummy will appreciate the lack of humidity
 ~~~
 {: .output}
@@ -438,7 +438,7 @@ index 315bf3a..b36abfd 100644
 +++ b/mars.txt
 @@ -1,2 +1,3 @@
  Cold and dry, but everything is my favorite color
- The two moons may be a problem for Wolfman
+ The two moons may be a problem for Juan
 +But the Mummy will appreciate the lack of humidity
 ~~~
 {: .output}
@@ -481,19 +481,19 @@ $ git log
 
 ~~~
 commit 005937fbe2a98fb83f0ade869025dc2636b4dad5
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: Margaret Hamilton <margaret.hamilton@nasa.gov>
 Date:   Thu Aug 22 10:14:07 2013 -0400
 
     Discuss concerns about Mars' climate for Mummy
 
 commit 34961b159c27df3b475cfe4415d94a6d1fcd064d
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: Margaret Hamilton <margaret.hamilton@nasa.gov>
 Date:   Thu Aug 22 10:07:21 2013 -0400
 
-    Add concerns about effects of Mars' moons on Wolfman
+    Add concerns about effects of Mars' moons on Juan
 
 commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: Margaret Hamilton <margaret.hamilton@nasa.gov>
 Date:   Thu Aug 22 09:51:46 2013 -0400
 
     Start notes on Mars as a base
@@ -537,7 +537,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 >
 > ~~~
 > commit 005937fbe2a98fb83f0ade869025dc2636b4dad5
-> Author: Vlad Dracula <vlad@tran.sylvan.ia>
+> Author: Margaret Hamilton <margaret.hamilton@nasa.gov>
 > Date:   Thu Aug 22 10:14:07 2013 -0400
 >
 >    Discuss concerns about Mars' climate for Mummy
@@ -553,7 +553,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > {: .language-bash}
 > ~~~
 > * 005937f Discuss concerns about Mars' climate for Mummy
-> * 34961b1 Add concerns about effects of Mars' moons on Wolfman
+> * 34961b1 Add concerns about effects of Mars' moons on Juan
 > * f22b25e Start notes on Mars as a base
 > ~~~
 > {: .output}
@@ -567,7 +567,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > {: .language-bash}
 > ~~~
 > * 005937f Discuss concerns about Mars' climate for Mummy (HEAD, master)
-> * 34961b1 Add concerns about effects of Mars' moons on Wolfman
+> * 34961b1 Add concerns about effects of Mars' moons on Juan
 > * f22b25e Start notes on Mars as a base
 > ~~~
 > {: .output}

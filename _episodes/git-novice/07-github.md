@@ -89,12 +89,12 @@ Copy that URL from the browser, go into the local `planets` repository, and run
 this command:
 
 ~~~
-$ git remote add origin https://github.com/vlad/planets.git
+$ git remote add origin https://github.com/mhamilton/planets.git
 ~~~
 {: .language-bash}
 
-Make sure to use the URL for your repository rather than Vlad's: the only
-difference should be your username instead of `vlad`.
+Make sure to use the URL for your repository rather than Margaret Hamilton's: the only
+difference should be your username instead of `mhamilton`.
 
 `origin` is a local name used to refer to the remote repository. It could be called
 anything, but `origin` is a convention that is often used by default in git
@@ -108,8 +108,8 @@ $ git remote -v
 {: .language-bash}
 
 ~~~
-origin   https://github.com/vlad/planets.git (push)
-origin   https://github.com/vlad/planets.git (fetch)
+origin   https://github.com/mhamilton/planets.git (push)
+origin   https://github.com/mhamilton/planets.git (fetch)
 ~~~
 {: .output}
 
@@ -130,7 +130,7 @@ Delta compression using up to 4 threads.
 Compressing objects: 100% (6/6), done.
 Writing objects: 100% (9/9), 821 bytes, done.
 Total 9 (delta 2), reused 0 (delta 0)
-To https://github.com/vlad/planets
+To https://github.com/mhamilton/planets
  * [new branch]      master -> master
 Branch master set up to track remote branch master from origin.
 ~~~
@@ -202,7 +202,7 @@ $ git pull origin master
 {: .language-bash}
 
 ~~~
-From https://github.com/vlad/planets
+From https://github.com/mhamilton/planets
  * branch            master     -> FETCH_HEAD
 Already up-to-date.
 ~~~
@@ -259,9 +259,9 @@ GitHub, though, this command would download them to our local repository.
 > you tried to link your local and remote repositories?
 >
 > > ## Solution
-> > In this case, we'd see a merge conflict due to unrelated histories. When GitHub creates a 
-> > README.md file, it performs a commit in the remote repository. When you try to pull the remote 
-> > repository to your local repository, Git detects that they have histories that do not share a 
+> > In this case, we'd see a merge conflict due to unrelated histories. When GitHub creates a
+> > README.md file, it performs a commit in the remote repository. When you try to pull the remote
+> > repository to your local repository, Git detects that they have histories that do not share a
 > > common origin and refuses to merge.
 > > ~~~
 > > $ git pull origin master
@@ -269,7 +269,7 @@ GitHub, though, this command would download them to our local repository.
 > > {: .language-bash}
 > >
 > > ~~~
-> > From https://github.com/vlad/planets
+> > From https://github.com/mhamilton/planets
 > >  * branch            master     -> FETCH_HEAD
 > >  * [new branch]      master     -> origin/master
 > > fatal: refusing to merge unrelated histories
@@ -283,7 +283,7 @@ GitHub, though, this command would download them to our local repository.
 > > {: .language-bash}
 > >
 > > ~~~
-> > From https://github.com/vlad/planets
+> > From https://github.com/mhamilton/planets
 > >  * branch            master     -> FETCH_HEAD
 > > Merge made by the 'recursive' strategy.
 > >  README.md | 1 +
