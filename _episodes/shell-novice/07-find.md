@@ -295,9 +295,7 @@ Miscellaneous:
 > ~~~
 > {: .source}
 >
-> She wants to write a shell script that takes a species as the first command-line argument 
-> and a directory as the second argument. The script should return one file called `species.txt` 
-> containing a list of dates and the number of that species seen on each date.
+> She wants to write a command-line that takes a species in a .txt file, containing a list of dates and the number of that species seen on each date.
 > For example using the data shown above, `rabbit.txt` would contain:
 > 
 > ~~~
@@ -309,12 +307,12 @@ Miscellaneous:
 > Put these commands and pipes in the right order to achieve this:
 > 
 > ~~~
-> cut -d : -f 2  
+>
 > >  
 > |  
-> grep -w $1 -r $2  
+> grep -w "rabbit" animals.txt 
 > |  
-> $1.txt  
+> $rabbit.txt  
 > cut -d , -f 1,3  
 > ~~~
 > {: .language-bash}
@@ -327,15 +325,11 @@ Miscellaneous:
 > > ## Solution
 > >
 > > ```
-> > grep -w $1 -r $2 | cut -d : -f 2 | cut -d , -f 1,3  > $1.txt
+> > grep -w "rabbit" animals.txt  | cut -d , -f 1,3  > $rabbit.txt
 > > ```
 > > {: .source}
 > >
-> > You would call the script above like this:
 > >
-> > ```
-> > $ bash count-species.sh bear .
-> > ```
 > > {: .language-bash}
 > {: .solution}
 {: .challenge}
