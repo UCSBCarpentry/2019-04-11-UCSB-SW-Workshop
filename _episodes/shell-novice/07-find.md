@@ -310,7 +310,7 @@ Miscellaneous:
 > ~~~
 > >  
 > |  
-> grep -w rabbit 
+> grep -w "rabbit" 
 > |  
 > rabbit.txt
 > |
@@ -325,11 +325,10 @@ Miscellaneous:
 > > ## Solution
 > >
 > > ```
-> > grep -w "rabbit" animals.txt | cut -d , -f 1,3  > animals.txt
+> > grep -w "rabbit" animals.txt | cut -d , -f 1,3  > rabbit.txt
 > > ```
 > > {: .source}
 > >
-> > ```
 > > {: .language-bash}
 > {: .solution}
 {: .challenge}
