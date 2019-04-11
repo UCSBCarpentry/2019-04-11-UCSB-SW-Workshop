@@ -283,8 +283,7 @@ Miscellaneous:
 
 > ## Tracking a Species
 > 
-> Leah has several hundred 
-> data files saved in one directory, each of which is formatted like this:
+> Leah has a data file, called animal.txt and saved in data/animal-counts/, which is formatted like this:
 > 
 > ~~~
 > 2013-11-05,deer,5
@@ -297,7 +296,7 @@ Miscellaneous:
 >
 > She wants to write a shell command to return one file called `rabbit.txt` 
 > containing a list of dates and the number of rabbits seen on each date.
-> For example using the data shown above, `rabbit.txt` would contain:
+> `rabbit.txt` would contain:
 > 
 > ~~~
 > 2013-11-05,22
