@@ -283,7 +283,7 @@ Miscellaneous:
 
 > ## Tracking a Species
 > 
-> Leah has a data file, called animal.txt and saved in data/animal-counts/, which is formatted like this:
+> Leah has a data file, called animals.txt and saved in data-shell/data/animal-counts/, which is formatted like this:
 > 
 > ~~~
 > 2013-11-05,deer,5
@@ -309,7 +309,7 @@ Miscellaneous:
 > ~~~
 > >  
 > |  
-> grep -w "rabbit" 
+> grep -w "rabbit" animals.txt
 > |  
 > rabbit.txt
 > |
@@ -319,7 +319,6 @@ Miscellaneous:
 >
 > Hint: use  `man cut` or 'cut --help' to select more than one field in a line.
 >
-> An example of such a file is provided in `data-shell/data/animal-counts/animals.txt`
 >
 > > ## Solution
 > >
